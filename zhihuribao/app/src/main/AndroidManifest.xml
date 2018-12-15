@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lenovo_pc.zhihuribao">
+
+    <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/zhihu"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/zhihu"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.Activity.loginActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".Activity.Activity.RegisterActivity" />
+        <activity
+            android:name=".Activity.Activity.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.Activity.HomeActivity_content"
+            android:label="栏目新闻" />
+        <activity
+            android:name=".Activity.Activity.HotActivity"
+            android:label="热门消息" />
+        <activity
+            android:name=".Activity.Activity.HoturlActivity"
+            android:label="具体内容" />
+        <activity
+            android:name=".Activity.Activity.TotalurlActivity"
+            android:label="具体内容" />
+        <activity
+            android:name=".Activity.Activity.DataActivity"
+            android:label="个人主页" />
+        <activity
+            android:name=".Activity.Activity.CommentActivity"
+            android:label="全部点评" />
+        <activity
+            android:name=".Activity.Activity.StoreActivity"
+            android:label="我的收藏" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.cameraalbumtest.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".Activity.Activity.Store2Activity"
+            android:label="我的收藏_栏目新闻" />
+        <activity
+            android:name=".Activity.Activity.Store3Activity"
+            android:label="我的收藏_热门消息" />
+        <activity android:name=".Activity.Activity.ChangeActivity" />
+        <activity
+            android:name=".Activity.Activity.WeatherActivity"
+            android:label="中国天气" />
+        <activity android:name=".Activity.Activity.FlashActivity" android:theme="@style/AppTheme">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

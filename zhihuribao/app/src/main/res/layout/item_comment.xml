@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/wv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></WebView>
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wv_comment"
+            android:textColor="#000000"
+            android:text="0" />
+        <ImageView
+            android:id="@+id/iv_good"
+            android:background="@mipmap/dianzanhui"
+            android:layout_toLeftOf="@+id/tv_good"
+            android:outlineSpotShadowColor="#C0C0C0"
+            android:layout_above="@+id/tv_content"
+            android:layout_width="16dp"
+            android:layout_height="17dp" />
+        <TextView
+            android:id="@+id/tv_good"
+            android:text="0"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wv_comment"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_good"/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_content"/>
+
+    </RelativeLayout>
+</LinearLayout>

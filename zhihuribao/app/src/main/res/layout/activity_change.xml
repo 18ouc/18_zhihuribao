@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Activity.ChangeActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_Hint1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="100dp"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_Username"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_Hint"-->
+        <!--android:layout_marginTop="20dip"-->
+        <!--android:text="昵称"-->
+        <!--android:textSize="25dp"-->
+        <!--/>-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/et_Username"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBaseline="@+id/tv_Username"-->
+        <!--android:layout_alignBottom="@+id/tv_Username"-->
+        <!--android:layout_toRightOf="@+id/tv_Username"-->
+        <!--android:ems="10"-->
+        <!--android:maxLength="8"-->
+        <!--android:singleLine="true"-->
+        <!--android:maxLines="20"-->
+        <!--/>-->
+
+        <TextView
+            android:id="@+id/tv_P1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Hint"
+            android:layout_alignLeft="@+id/tv_Hint"
+            android:layout_marginTop="19dp"
+            android:text="旧密码"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et_P1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_P1"
+            android:layout_alignBottom="@+id/tv_P1"
+            android:layout_toRightOf="@+id/tv_P1"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:ems="10"
+            android:maxLines="20" />
+
+        <TextView
+            android:id="@+id/tv_P2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_P1"
+            android:layout_alignLeft="@+id/tv_Hint"
+            android:layout_marginTop="19dp"
+            android:text="新密码"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et_P2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_P2"
+            android:layout_alignBottom="@+id/tv_P2"
+            android:layout_toRightOf="@+id/tv_P2"
+            android:maxLength="16"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:maxLines="20"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/tv_P3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_P2"
+            android:layout_alignLeft="@+id/tv_Hint"
+            android:layout_marginTop="19dp"
+            android:text="新密码"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et_P3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_P3"
+            android:layout_alignBottom="@+id/tv_P3"
+            android:layout_toRightOf="@+id/tv_P3"
+            android:maxLength="16"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:maxLines="20"
+            android:singleLine="true"/>
+
+        <Button
+            android:id="@+id/btn_xiugai12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_P3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:background="#00000000"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:text="修改密码" />
+
+        <TextView
+            android:id="@+id/tv_Hint2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:layout_below="@+id/tv_Hint1"/>
+
+        <TextView
+            android:id="@+id/tv_Hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码由1-16位数字、字母或符号组成"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:layout_below="@+id/tv_Hint2"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

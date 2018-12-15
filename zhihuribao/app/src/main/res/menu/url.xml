@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/store"
+        android:icon="@mipmap/shoucangbai"
+        android:title="store"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/comment"
+        android:icon="@mipmap/pinglun"
+        android:title="store"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/comment_num"
+        android:title = " "
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/good"
+        android:icon="@mipmap/dianzan"
+        android:title="good"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/good_num"
+        android:title=" "
+        app:showAsAction="always"/>
+</menu>

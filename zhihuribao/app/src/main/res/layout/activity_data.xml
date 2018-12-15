@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Activity.DataActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/in_picture"
+            android:enabled="false"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/user"
+            android:layout_marginTop="100dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/in_picture"
+            android:layout_marginTop="20dip"
+            android:layout_below="@+id/in_picture"
+            android:text="昵称"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_name"
+            android:layout_alignBottom="@+id/tv_name"
+            android:layout_toRightOf="@+id/tv_name"
+            android:focusable="false"
+            android:singleLine="true"
+            android:maxLength="8"
+            android:ems="10"
+            android:maxLines="20" />
+
+        <TextView
+            android:id="@+id/tv_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_alignLeft="@+id/tv_name"
+            android:layout_marginTop="19dp"
+            android:text="邮箱"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_Email"
+            android:layout_alignBottom="@+id/tv_Email"
+            android:layout_toRightOf="@+id/tv_Email"
+            android:focusable="false"
+            android:maxLength="25"
+            android:singleLine="true"
+            android:ems="10"
+            android:maxLines="20" />
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_Email"
+            android:layout_alignLeft="@+id/tv_name"
+            android:layout_marginTop="19dp"
+            android:text="性别"
+            android:textSize="25dp" />
+        <CheckBox
+            android:id="@+id/cb_boy"
+            android:layout_toRightOf="@+id/tv_sex"
+            android:layout_below="@+id/tv_Email"
+            android:layout_marginTop="29dp"
+            android:layout_marginLeft="29dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/tv_sexb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_Email"
+            android:layout_alignRight="@+id/cb_boy"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="-39dp"
+            android:text="男"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <CheckBox
+            android:id="@+id/cb_girl"
+            android:layout_toRightOf="@+id/tv_sexb"
+            android:layout_below="@+id/tv_Email"
+            android:layout_marginTop="29dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/tv_sexG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_Email"
+            android:layout_alignRight="@+id/cb_girl"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="-39dp"
+            android:text="女"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+        <!--<Button-->
+            <!--android:id="@+id/btn_set"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_sex"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textSize="25dp"-->
+        <!--android:background="#FFFFFF"-->
+        <!--android:textColor="#000000"-->
+        <!--android:text="保存资料" />-->
+        <TextView
+            android:id="@+id/tv_wel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            />
+        <!--<Button-->
+            <!--android:id="@+id/btn_Forget"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/btn_Log"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:text="忘记密码" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_Hint"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:text="登录即代表阅读并同意服务条款" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_Leave"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:text="退出" />-->
+
+    </RelativeLayout>
+</LinearLayout>
